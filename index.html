@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Véia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <h1>Jogo da Véia</h1>
-      <p>Feito com HTML, CSS, JavaScript e um pouco de hate</p>
+      <p>Feito com HTML, CSS, JavaScript e um pouco de hate !</p>
     </header>
     <main>
       <aside>
@@ -20,8 +26,8 @@
             <input type="text" name="username" id="playername" />
           </div>
           <div>
-            <button type="button">Cancelar</button>
-            <button type="submit">Confirmar</button>
+            <button type="button" class="btn btn-alt">Cancelar</button>
+            <button type="submit" class="btn">Confirmar</button>
           </div>
         </form>
       </aside>
@@ -32,7 +38,7 @@
               <h2>Jogador um</h2>
               <h3>NOME DO JOGADOR</h3>
               <p>X</p>
-              <button>Editar</button>
+              <button class="btn btn-alt">Editar</button>
             </article>
           </li>
           <li>
@@ -40,11 +46,11 @@
               <h2>Jogador dois</h2>
               <h3>NOME DO JOGADOR</h3>
               <p>O</p>
-              <button>Editar</button>
+              <button class="btn btn-alt">Editar</button>
             </article>
           </li>
         </ol>
-        <button>Novo Jogo</button>
+        <button class="btn">Novo Jogo</button>
       </section>
 
       <section id="active-game">
