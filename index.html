@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Véia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da Véia</h1>
+      <p>Feito com HTML, CSS, JavaScript e um pouco de hate</p>
+    </header>
+    <main>
+      <aside>
+        <h2>Escolha o seu nome de cama</h2>
+        <form>
+          <div>
+            <label for="playername">Nome do Jogador</label>
+            <input type="text" name="username" id="playername" />
+          </div>
+          <div>
+            <button type="button">Cancelar</button>
+            <button type="submit">Confirmar</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game-config">
+        <ol>
+          <li>
+            <article>
+              <h2>Jogador um</h2>
+              <h3>NOME DO JOGADOR</h3>
+              <p>X</p>
+              <button>Editar</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Jogador dois</h2>
+              <h3>NOME DO JOGADOR</h3>
+              <p>O</p>
+              <button>Editar</button>
+            </article>
+          </li>
+        </ol>
+        <button>Novo Jogo</button>
+      </section>
+
+      <section id="active-game">
+        <article>
+          <h3>
+            Parabéns, <span id="winner-name">VENCEDOR</span>, você venceu !
+          </h3>
+          <p>Clique em Novo Jogo para jogar de novo !</p>
+        </article>
+
+        <p>
+          Agora é o turno de
+          <span id="active-player-name">NOME DO JOGADOR</span> !
+        </p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
