@@ -30,10 +30,11 @@
         <form>
           <div class="form-control">
             <label for="playername">Nome do Jogador</label>
-            <input type="text" name="username" id="playername" />
+            <input type="text" name="username" id="playername" required //>
           </div>
+          <p id="config-errors"></p>
           <div>
-            <button type="button" class="btn btn-alt" id="cancel-config-btn">
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
               Cancelar
             </button>
             <button type="submit" class="btn">Confirmar</button>
@@ -47,7 +48,9 @@
               <h2>Jogador um</h2>
               <h3>NOME DO JOGADOR</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt" id="edit-player1">Editar</button>
+              <button class="btn btn-alt" id="edit-player1" data-playerid="1">
+                Editar
+              </button>
             </article>
           </li>
           <li>
@@ -55,7 +58,9 @@
               <h2>Jogador dois</h2>
               <h3>NOME DO JOGADOR</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt" id="edit-player2">Editar</button>
+              <button class="btn btn-alt" id="edit-player2" data-playerid="2">
+                Editar
+              </button>
             </article>
           </li>
         </ol>
