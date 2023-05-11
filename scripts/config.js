@@ -2,8 +2,6 @@ function openPlayerConfig(event) {
   editedPlayer = +event.target.dataset.playerid;
   playerConfigOverlay.style.display = "block";
   backdropElement.style.display = "block";
-
-  console.log(editedPlayer);
 }
 
 function cancelPlayerConfig() {
@@ -33,7 +31,6 @@ function savePlayerConfig(event) {
   updatePlayerDataElement.children[1].textContent = currentPlayerName;
   players[editedPlayer - 1].name = currentPlayerName;
 
-  console.log(players);
   cancelPlayerConfig();
 }
 
