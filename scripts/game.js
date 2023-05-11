@@ -1,7 +1,17 @@
+function warningMessage(message) {
+  warningMessageElement.textContent = message;
+  backdropElement.style.display = "block";
+  emptyNameOverlay.style.display = "block";
+}
+
 function startNewGame() {
   if (!players[0].name || !players[1].name) {
-    backdropElement.style.display = "block";
-    emptyNameOverlay.style.display = "block";
+    warningMessage("Os dois jogadores precisam ser definidos !");
+    return;
+  }
+
+  if (players[0].name === players[1].name) {
+    warningMessage("Os dois jogadores tem o mesmo nome !");
     return;
   }
 
@@ -19,7 +29,10 @@ function changePlayer() {
 function selectGameGrid(event) {
   const selectedGrid = event.target;
 
-  if (selectedGrid.textContent) return;
+  if (selectedGrid.textContent) {
+    warningMessage("Esse bloco já foi escolhido !");
+    return;
+  }
 
   const selectedColumn = selectedGrid.dataset.col - 1;
   const selectedRow = selectedGrid.dataset.row - 1;

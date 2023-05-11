@@ -25,6 +25,7 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.querySelector("#config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const warningMessageElement = document.getElementById("warning-message");
 
 // BOTÕES
 const editPlayer1BtnElement = document.getElementById("edit-player1");
@@ -39,7 +40,7 @@ editPlayer1BtnElement.addEventListener("click", openPlayerConfig);
 editPlayer2BtnElement.addEventListener("click", openPlayerConfig);
 
 cancelConfigBtnElement.addEventListener("click", cancelPlayerConfig);
-backdropElement.addEventListener("click", cancelPlayerConfig);
+// backdropElement.addEventListener("click", cancelPlayerConfig);
 
 emptyNameBtnElement.addEventListener("click", fixEmptyNameButton);
 
