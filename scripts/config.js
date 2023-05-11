@@ -36,3 +36,8 @@ function savePlayerConfig(event) {
   console.log(players);
   cancelPlayerConfig();
 }
+
+function fixEmptyNameButton() {
+  backdropElement.style.display = "none";
+  emptyNameOverlay.style.display = "none";
+}

@@ -6,6 +6,28 @@
   margin: 0.5rem 0;
 }
 
+#empty-name-overlay {
+  text-align: center;
+  color: crimson;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#empty-name-overlay h2 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+#empty-name-overlay .last-warning {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#config-errors {
+  font-weight: bold;
+  color: crimson;
+  font-size: 2rem;
+}
+
 .form-control {
   margin: 0.5rem 0;
 }

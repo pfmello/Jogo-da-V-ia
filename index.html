@@ -41,6 +41,15 @@
           </div>
         </form>
       </aside>
+
+      <aside class="modal" id="empty-name-overlay">
+        <h2>Você é burro ?</h2>
+        <p>Um dos nomes está vazio !</p>
+        <p>Não tente me enganar, seu maldito !</p>
+        <p class="last-warning">ESTOU DE OLHO EM VOCÊ !</p>
+        <button class="btn" id="empty-name-btn">Ok</button>
+      </aside>
+
       <section id="game-config">
         <ol>
           <li>
@@ -64,7 +73,7 @@
             </article>
           </li>
         </ol>
-        <button class="btn">Novo Jogo</button>
+        <button class="btn" id="start-game-btn">Novo Jogo</button>
       </section>
 
       <section id="active-game">
@@ -80,16 +89,16 @@
           <span id="active-player-name">NOME DO JOGADOR</span> !
         </p>
         <ol id="game-board">
-          <li class="disabled">X</li>
           <li></li>
-          <li class="disabled">O</li>
+          <li></li>
+          <li></li>
 
           <li></li>
-          <li class="disabled">X</li>
-          <li class="disabled">O</li>
+          <li></li>
+          <li></li>
 
           <li></li>
-          <li class="disabled">X</li>
+          <li></li>
           <li></li>
         </ol>
       </section>
