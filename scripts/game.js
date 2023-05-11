@@ -17,9 +17,21 @@ function changePlayer() {
 }
 
 function selectGameGrid(event) {
-  if (event.target.textContent) return;
+  const selectedGrid = event.target;
 
-  event.target.textContent = players[activePlayer].symbol;
-  event.target.classList.add("disabled");
+  if (selectedGrid.textContent) return;
+
+  const selectedColumn = selectedGrid.dataset.col - 1;
+  const selectedRow = selectedGrid.dataset.row - 1;
+
+  selectedGrid.textContent = players[activePlayer].symbol;
+  selectedGrid.classList.add("disabled");
+
+  gameData[selectedRow][selectedColumn] = activePlayer + 1;
+  console.log(gameData);
+
   changePlayer();
+  checkWinner();
 }
+
+function checkWinner() {}
