@@ -3,8 +3,10 @@ const gameData = [
   [0, 0, 0],
   [0, 0, 0],
 ];
+
 let editedPlayer = 0;
 let activePlayer = 0;
+let gameIsOver = false;
 
 const players = [
   {
@@ -26,6 +28,8 @@ const errorsOutputElement = document.querySelector("#config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
 const warningMessageElement = document.getElementById("warning-message");
+
+const gameOverElement = document.getElementById("game-over");
 
 // BOTÕES
 const editPlayer1BtnElement = document.getElementById("edit-player1");
